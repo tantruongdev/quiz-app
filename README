@@ -28,7 +28,7 @@ QuizApp is a web application designed to serve as a user-friendly platform for m
   npm install
 ```
 
-4. **Run Database JSON-server**: Start the application using npm:
+4. **Run JSON-server**: Start the application using npm:
 
    ```
    cd database
