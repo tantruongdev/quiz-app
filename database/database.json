@@ -1,0 +1,922 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Nguyen Thi A",
+      "email": "nguyenthia@gmail.com",
+      "password": "nguyenthia",
+      "token": "bkP9VQydMBRmW67obqD7"
+    },
+    {
+      "id": 2,
+      "fullName": "Do Thi B",
+      "email": "dothib@gmail.com",
+      "password": "dothib",
+      "token": "KsZitkpwbbPF3fdjbQWh"
+    },
+    {
+      "id": 3,
+      "fullName": "Ngo Van C",
+      "email": "ngovanc@gmail.com",
+      "password": "ngovanc",
+      "token": "abVy7NJdWVNgqGcCD9Lo"
+    },
+    {
+      "id": 4,
+      "fullName": "Le Van D",
+      "email": "levand@gmail.com",
+      "password": "levand",
+      "token": "tq7nF9XpG3wUnr1U76P5"
+    },
+    {
+      "fullName": "Nguyễn thị e",
+      "email": "nguyenthie@gmail.com",
+      "password": "nguyenthie",
+      "token": "NU2pOY2SHfNXYdeoPuTO",
+      "id": 5
+    },
+    {
+      "fullName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "token": "NBasx1Jasahsiwxcnz3a",
+      "id": 6
+    },
+    {
+      "id": "0cc8",
+      "fullName": "Nguyễn Thị S",
+      "email": "nguyenthis@gmail.com",
+      "password": "nguyenthis",
+      "token": "gHdtgOaGMgQbv8bVEn3G"
+    },
+    {
+      "id": "637f",
+      "fullName": "Nguyễn Thị F",
+      "email": "nguyenthif@gmail.com",
+      "password": "nguyenthif",
+      "token": "8Wk2ZvLZ3EAswl5r3PFj"
+    },
+    {
+      "id": "641b",
+      "fullName": "Nguyễn Thị H",
+      "email": "nguyenthih@gmail.com",
+      "password": "nguyenthih",
+      "token": "HlllSK27usiB3SXXDocm"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "HTML5"
+    },
+    {
+      "id": 2,
+      "name": "CSS3"
+    },
+    {
+      "id": 3,
+      "name": "Javascript"
+    },
+    {
+      "id": 4,
+      "name": "ReactJS"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topicId": 1,
+      "question": "HTML là viết tắt của ...? ",
+      "answers": [
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyper Text Markup Language"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 2,
+      "topicId": 1,
+      "question": "Ai là người đưa ra các tiêu chuẩn Web?",
+      "answers": [
+        "Tổ chức World Wide Web Consortium (W3C)",
+        "Apple",
+        "Google",
+        "Microsoft"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "topicId": 1,
+      "question": "Thẻ <iframe> được sử dụng để hiển thị một trang trong một trang web?",
+      "answers": [
+        "Đúng",
+        "Sai",
+        "Không có thẻ <iframe>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "topicId": 1,
+      "question": "Các chú thích trong HTML sẽ bắt đầu bằng <!-- và kết thúc bằng -->?",
+      "answers": [
+        "Đúng",
+        "Sai"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 6,
+      "topicId": 1,
+      "question": "Chọn thẻ HTML được dùng để nhấn mạnh nội dung văn bản",
+      "answers": [
+        "<i>",
+        "<em>",
+        "<italic>",
+        "<b>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "topicId": 1,
+      "question": "Mã HTML chính xác để tạo liên kết là .. ",
+      "answers": [
+        "<a name=\"https://daca.vn\">Daca.vn</a>",
+        "<a href=\"https://daca.vn\">Daca.vn</a>",
+        "<a url-\"https://daca.vn\">Daca.vn</a>",
+        "<a>https://daca.vnc/a>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "topicId": 1,
+      "question": "Ký tự nào được dùng để biểu thị cho một thẻ đóng?",
+      "answers": [
+        "\\",
+        "/",
+        "^",
+        "*"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "topicId": 1,
+      "question": "HTML5 được ra mắt vào năm nào?",
+      "answers": [
+        "2008",
+        "2010",
+        "2012",
+        "2014"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "topicId": 1,
+      "question": "Các tính năng nổi bật của HTML5 bao gồm...",
+      "answers": [
+        "Canvas",
+        "Video và Audio",
+        "Geolocation",
+        "Tất cả các đáp án trên"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 11,
+      "topicId": 1,
+      "question": "CSS3 là phiên bản nâng cấp của...",
+      "answers": [
+        "HTML",
+        "JavaScript",
+        "CSS2",
+        "XHTML"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 12,
+      "topicId": 1,
+      "question": "Doctype của HTML5 là gì?",
+      "answers": [
+        "<!DOCTYPE html5>",
+        "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML5.0//EN\" \"http://www.w3.org/TR/html5/strict.dtd\">",
+        "<!DOCTYPE html>",
+        "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 13,
+      "topicId": 1,
+      "question": "Cú pháp đúng để thêm một hình ảnh trong HTML5 là...",
+      "answers": [
+        "<image src=\"image.jpg\">",
+        "<img src=\"image.jpg\" alt=\"Description\">",
+        "<img=\"image.jpg\">",
+        "<picture src=\"image.jpg\">"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "topicId": 1,
+      "question": "Thẻ định nghĩa cấu trúc phân đoạn trong HTML5 là...",
+      "answers": [
+        "<section>",
+        "<segment>",
+        "<div>",
+        "<part>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 15,
+      "topicId": 1,
+      "question": "Để thêm video vào trang web, ta sử dụng thẻ nào trong HTML5?",
+      "answers": [
+        "<video>",
+        "<media>",
+        "<movie>",
+        "<multimedia>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 16,
+      "topicId": 1,
+      "question": "Để thêm âm thanh vào trang web, ta sử dụng thẻ nào trong HTML5?",
+      "answers": [
+        "<audio>",
+        "<sound>",
+        "<music>",
+        "<song>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 17,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để tạo danh sách có thứ tự trong HTML5?",
+      "answers": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<dl>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để tạo danh sách không có thứ tự trong HTML5?",
+      "answers": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<dl>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 19,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để tạo định danh cho một phần tử trong HTML5?",
+      "answers": [
+        "<id>",
+        "<identifier>",
+        "<class>",
+        "<div>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 20,
+      "topicId": 1,
+      "question": "Trong HTML5, thẻ nào dùng để hiển thị một phần tử in đậm?",
+      "answers": [
+        "<strong>",
+        "<bold>",
+        "<b>",
+        "<i>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "topicId": 1,
+      "question": "Mã HTML nào bạn sẽ dùng khi muốn mở link trên 1 tab hoặc cửa số mới?",
+      "answers": [
+        "<a href=\"https://daca.vn\" target=\"new\">Daca.vn</a>",
+        "<a href=\"https://daca.vn\" new>Daca.vn</a>",
+        "<a hnef=\"httns.//daca.vn\" target=\" blank\">Daca vn</as",
+        "<a href=\"https://daca.vn\" target=\"new\">Daca.vn</a>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 22,
+      "topicId": 1,
+      "question": "Thẻ HTML nào tạo ra một danh sách thả xuống (drop-down list)?",
+      "answers": [
+        "<input type=\"list\">",
+        "<input type=\"dropdown\">",
+        "<select>",
+        "<list>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 23,
+      "topicId": 1,
+      "question": "Thẻ HTML nào tạo ra một ô nhập dữ liệu với nhiều dòng?",
+      "answers": [
+        "<input type=\"textarea\">",
+        "<textarea></textarea>",
+        "<input type=\"textbox\">",
+        "<textbox></textbox>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "topicId": 1,
+      "question": "Thẻ HTML nào dùng để chèn một hình ảnh?",
+      "answers": [
+        "<image src=\"image.gif\" alt=\"Ảnh đẹp\">",
+        "<img href=\"image.gif\" alt=\"Ảnh đẹp\">",
+        "<img src=\"image.gif\" alt=\"Ảnh đẹp\">",
+        "<img alt=\"Ảnh đẹp\">image.gif</img>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 25,
+      "topicId": 1,
+      "question": "Để tạo một danh sách có dấu đầu dòng, bạn dùng thẻ HTML nào?",
+      "answers": [
+        "<ul>",
+        "<list>",
+        "<lt>",
+        "<ol>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 26,
+      "topicId": 1,
+      "question": "Để tạo một danh sách đánh số, bạn dùng phần tử HTML nào?",
+      "answers": [
+        "<ul>",
+        "<list>",
+        "<lt>",
+        "<ol>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 27,
+      "topicId": 1,
+      "question": "Thẻ HTML nào tạo ra một hộp kiểm (checkbox)?",
+      "answers": [
+        "<input type=\"checkbox\">",
+        "<checkbox>",
+        "<check>",
+        "<input type=\"check\">"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 28,
+      "topicId": 2,
+      "question": "Đặt dòng liên kết với file CSS ở vùng nào trong file HTML?",
+      "answers": [
+        "Trong thẻ <body>",
+        "Trong thẻ <head>",
+        "Ở cuối file HTML",
+        "Ở đầu file HTML"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "topicId": 2,
+      "question": "Dòng nào tuân theo đúng cú pháp của CSS?",
+      "answers": [
+        "body { color: black }",
+        "{ body; color: black }",
+        "body: color=black",
+        "{ body: color=black }"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "topicId": 2,
+      "question": "Dòng nào thể hiện đúng một comment (lời chú thích) trong CSS?",
+      "answers": [
+        "/* this is a comment */",
+        "// this is a comment //",
+        "\"this is a comment\"",
+        "// this is a comment"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 31,
+      "topicId": 2,
+      "question": "CSS là viết tắt của?",
+      "answers": [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Cascading Sentitive Sheets",
+        "Creative Sensitive Sheets"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 35,
+      "topicId": 2,
+      "question": "Làm sao để tạo chữ đậm?",
+      "answers": [
+        "font-weight: bold",
+        "style: bold",
+        "font-style: bold",
+        "Tất cả đều đúng"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 36,
+      "topicId": 2,
+      "question": "Làm sao để thay đổi lề trái của một phần tử?",
+      "answers": [
+        "margin-left:",
+        "text-indent:",
+        "indent:",
+        "left:"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 37,
+      "topicId": 2,
+      "question": "Để định nghĩa khoảng trống giữa các viền (border) của phần tử và nội dung, bạn sử dụng thuộc tính padding, có thể gán giá trị âm cho thuộc tính này không?",
+      "answers": [
+        "Có",
+        "Không",
+        "Chỉ có thể ở một vài trường hợp đặc biệt",
+        "Tùy theo trình duyệt người dùng"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 38,
+      "topicId": 2,
+      "question": "Làm thế nào để hình ở đầu mỗi dòng của 1 list (danh sách) có hình vuông?",
+      "answers": [
+        "type: 2",
+        "type: square",
+        "list-type: square",
+        "list-style-type: square"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 39,
+      "topicId": 2,
+      "question": "a:hover là:",
+      "answers": [
+        "Liên kết chưa thăm",
+        "Di chuột vào thẻ a",
+        "Liên kết đã thăm"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 42,
+      "topicId": 3,
+      "question": "Cách để lấy độ dài của một chuỗi trong JavaScript?",
+      "answers": [
+        "length()",
+        "size()",
+        "count()",
+        "length"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 43,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để thêm một phần tử vào cuối một mảng trong JavaScript?",
+      "answers": [
+        "push()",
+        "pop()",
+        "unshift()",
+        "shift()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 44,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để xóa một phần tử ở cuối một mảng trong JavaScript?",
+      "answers": [
+        "push()",
+        "pop()",
+        "unshift()",
+        "shift()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 45,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để xóa một phần tử ở đầu một mảng trong JavaScript?",
+      "answers": [
+        "push()",
+        "pop()",
+        "unshift()",
+        "shift()"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 46,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để chuyển đổi một số thành một chuỗi trong JavaScript?",
+      "answers": [
+        "toString()",
+        "toText()",
+        "convertToString()",
+        "string()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 47,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để tạo một số ngẫu nhiên trong JavaScript?",
+      "answers": [
+        "random()",
+        "rand()",
+        "randomNumber()",
+        "srand()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 52,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để mở một cửa số trình duyệt mới trong JavaScript?",
+      "answers": [
+        "openWindow()",
+        "newWindow()",
+        "createWindow()",
+        "window.open()"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 53,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để đóng cửa số trình duyệt hiện tại trong JavaScript?",
+      "answers": [
+        "closeWindow()",
+        "window.close()",
+        "exitWindow()",
+        "hideWindow()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 54,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để xác định kích thước của cửa số trình duyệt trong JavaScript?",
+      "answers": [
+        "getWindowSize()",
+        "getBrowserSize()",
+        "getSize()",
+        "window.innerWidth và window.innerHeight"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 58,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để thêm một sự kiện vào một phần tử HTML trong JavaScript?",
+      "answers": [
+        "addEventListener()",
+        "attachEvent()",
+        "bindEvent()",
+        "setEvent()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 59,
+      "topicId": 3,
+      "question": "Hàm nào được sử dụng để loại bỏ một sự kiện khỏi một phần tử HTML trong JavaScript?",
+      "answers": [
+        "removeEvent()",
+        "removeEventListener()",
+        "detachEvent()",
+        "unbindEvent()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 60,
+      "topicId": 3,
+      "question": "Để lấy một phần tử HTML trong DOM bằng JavaScript, ta sử dụng phương thức nào của đối tượng document?",
+      "answers": [
+        "getElementById()",
+        "getElementsByClassName()",
+        "getElementsByTagName()",
+        "querySelector()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 63,
+      "topicId": 3,
+      "question": "Phương thức nào của đối tượng element được sử dụng để xóa một thuộc tính HTML?",
+      "answers": [
+        "setAttribute()",
+        "removeAttribute()",
+        "getAttribute()",
+        "hasAttribute()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 64,
+      "topicId": 3,
+      "question": "Để tạo một phần tử HTML mới bằng JavaScript, ta sử dụng phương thức nào của đối tượng document?",
+      "answers": [
+        "createElement()",
+        "createTextNode()",
+        "createAttribute()",
+        "createHTML()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 65,
+      "topicId": 3,
+      "question": "Phương thức nào của đối tượng fetch được sử dụng để gửi yêu cầu lấy dữ liệu đến máy chủ?",
+      "answers": [
+        "get()",
+        "post()",
+        "put()",
+        "delete()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 66,
+      "topicId": 3,
+      "question": "Phương thức nào của đối tượng fetch được sử dụng để gửi yêu cầu lưu dữ liệu đến máy chủ?",
+      "answers": [
+        "get()",
+        "post()",
+        "put()",
+        "delete()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 67,
+      "topicId": 3,
+      "question": "Phương thức nào của đối tượng fetch được sử dụng để gửi yêu cầu cập nhật dữ liệu đến máy chủ?",
+      "answers": [
+        "get()",
+        "post()",
+        "put()",
+        "delete()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 68,
+      "topicId": 3,
+      "question": "Phương thức nào của đối tượng fetch được sử dụng để gửi yêu cầu xóa dữ liệu đến máy chủ?",
+      "answers": [
+        "get()",
+        "post()",
+        "put()",
+        "delete()"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 69,
+      "topicId": 3,
+      "question": "Khi nào chúng ta sử dụng phương thức then() của đối tượng fetch?",
+      "answers": [
+        "Để xử lý kết quả trả về từ phản hồi",
+        "Để gửi yêu cầu đến máy chủ",
+        "Để tạo đối tượng Response mới",
+        "Tất cả các đáp án đều sai"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 70,
+      "topicId": 3,
+      "question": "Khi nào chúng ta sử dụng phương thức catch() của đối tượng fetch?",
+      "answers": [
+        "Khi xảy ra lỗi trong quá trình gửi yêu cầu đến máy chủ",
+        "Khi nhận được phản hồi từ máy chủ",
+        "Khi xảy ra lỗi trong quá trình xử lý phản hồi",
+        "Tất cả các đáp án đều sai"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 72,
+      "topicId": 4,
+      "question": "ReactJS sử dụng cú pháp gì để tạo các component?",
+      "answers": [
+        "HTML",
+        "JSX",
+        "XML",
+        "CSS"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 73,
+      "topicId": 4,
+      "question": "ReactJS sử dụng state để làm gì?",
+      "answers": [
+        "Lưu trữ các thông tin cục bộ trong component",
+        "Lưu trữ các thông tin toàn cục trong ứng dụng",
+        "Định nghĩa các thuộc tính cho component",
+        "Xử lý các sự kiện của người dùng"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 74,
+      "topicId": 4,
+      "question": "Để bắt đầu phát triển một ứng dụng ReactJs, ta cần cài đặt gì?",
+      "answers": [
+        "React Native",
+        "Visual Studio Code",
+        "Node.js",
+        "Redux"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 75,
+      "topicId": 4,
+      "question": "Trong ReactJS, để truyền dữ liệu từ component cha xuống component con, ta sử dụng gì?",
+      "answers": [
+        "State",
+        "Props",
+        "Refs",
+        "Hooks"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 76,
+      "topicId": 4,
+      "question": "Trong ReactJS, để thay đổi trạng thái của một component khi một sự kiện xảy ra, ta sử dụng gì?",
+      "answers": [
+        "State",
+        "Props",
+        "Refs",
+        "Hooks"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 77,
+      "topicId": 4,
+      "question": "Trong ReactJS, để đồng bộ dữ liệu giữa các component không có quan hệ cha-con, ta sử dụng gì?",
+      "answers": [
+        "Props",
+        "React Router",
+        "Context API",
+        "Hooks"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 78,
+      "topicId": 4,
+      "question": "Trong ReactJS, để tạo một component có thể chứa nhiều component khác, ta sử dụng gì?",
+      "answers": [
+        "State",
+        "Props",
+        "Hooks",
+        "Fragments"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 79,
+      "topicId": 4,
+      "question": "Hook nào trong ReactJS được sử dụng để quản lý trạng thái của một component bằng cách sử dụng các biến cục bộ?",
+      "answers": [
+        "useState()",
+        "useEffect()",
+        "useContext()",
+        "useMemo()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 80,
+      "topicId": 4,
+      "question": "Hook nào trong ReactJS được sử dụng để cung cấp các biến và hàm global cho tất cả các thành phần của ứng dụng?",
+      "answers": [
+        "useState()",
+        "useEffect()",
+        "useContext()",
+        "useMemo()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 81,
+      "topicId": 4,
+      "question": "Hook nào trong ReactJS được sử dụng để tối ưu hóa hiệu suất của component bằng cách lưu trữ kết quả tính toán giữa các lần render?",
+      "answers": [
+        "useState()",
+        "useEffect()",
+        "useContext()",
+        "useMemo()"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 82,
+      "topicId": 4,
+      "question": "Hook nào trong ReactJS được sử dụng để tạo một reference tới một phần tử HTML hoặc một thành phần React?",
+      "answers": [
+        "useRef()",
+        "useEffect()",
+        "useContext()",
+        "useMemo()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 83,
+      "topicId": 4,
+      "question": "Hook nào trong ReactJS được sử dụng để theo dõi sự thay đổi của một giá trị và chỉ khi giá trị thay đổi, mới thực hiện một tác vụ nào đó?",
+      "answers": [
+        "useRef()",
+        "useEffect()",
+        "useContext()",
+        "useMemo()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 84,
+      "topicId": 4,
+      "question": "Thư viện nào trong ReactJS được sử dụng để quản lý các route và chuyển hướng trang trong ứng dụng web?",
+      "answers": [
+        "React Router",
+        "Redux",
+        "Axios",
+        "Lodash"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "answers": [
+    {
+      "userId": 5,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 1
+        },
+        {
+          "questionId": 2,
+          "answer": 2
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}
