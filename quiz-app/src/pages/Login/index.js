@@ -31,13 +31,14 @@ function Login() {
     <>
       <div className="login">
         <h1 className="login__title-head">Login Quiz</h1>
+        <h3>Test Account: email: admin password: 123456</h3>
         <form onSubmit={handleSubmit} className="login__form">
           <div className="login__item">
             {/* <label htmlFor="email">Email: </label> */}
             <input
               type="text"
               id="email"
-              placeholder="Enter your email..."
+              placeholder="Enter your email...:admin"
             ></input>
           </div>
           <div className="login__item">
@@ -45,7 +46,7 @@ function Login() {
             <input
               type="password"
               id="password"
-              placeholder="Enter your password..."
+              placeholder="Enter your password...: 123456"
             ></input>
           </div>
 
