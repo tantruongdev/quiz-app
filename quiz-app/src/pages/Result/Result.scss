@@ -1,0 +1,73 @@
+.result {
+  &__title-head {
+    margin-bottom: 20px;
+  }
+
+  &__overview {
+    margin-bottom: 16px;
+    font-size: 18px;
+
+  }
+
+  &__list {
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__answers {
+    margin-top: 16px;
+    padding-left: 8px;
+  }
+
+  &__answer {
+    display: flex;
+    align-items: center;
+
+    gap: 5px
+  }
+
+  &__tag {
+    margin-left: 10px;
+    padding: 3px 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+
+    &--true {
+      background: green;
+    }
+
+    &--false {
+      background: red;
+    }
+  }
+
+
+  &__item--selected {
+    color: red;
+  }
+
+  &__item--result {
+    color: green;
+  }
+
+  &__submit {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #F1C40F;
+
+
+    &:hover {
+      background: orange;
+    }
+
+  }
+}

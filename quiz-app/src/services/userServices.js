@@ -6,11 +6,11 @@ export const login = async (email, password) => {
 };
 
 export const register = async (options) => {
-  const result = await post(`users`, options);
+  const result = await post("users", options);
   return result;
 };
 
-export const checkExits = async (key, value) => {
+export const checkUserExist = async (key, value) => {
   const result = await get(`users?${key}=${value}`);
   return result;
 };

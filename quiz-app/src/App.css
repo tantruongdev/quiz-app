@@ -32,22 +32,7 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
-}
-
-
-table,
-td,
-td {
-  border: 1px solid #ddd;
-  border-collapse: collapse;
-
-}
-
-td,
-td {
-  padding: 10px;
 }

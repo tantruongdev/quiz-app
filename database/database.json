@@ -62,6 +62,34 @@
       "email": "nguyenthih@gmail.com",
       "password": "nguyenthih",
       "token": "HlllSK27usiB3SXXDocm"
+    },
+    {
+      "fullName": "Tan Truong",
+      "email": "admin",
+      "password": "123456",
+      "token": "u3uTYHP5LEU8FNNV7eMZ",
+      "id": 7
+    },
+    {
+      "fullName": "Tan Truong 1",
+      "email": "admin1",
+      "password": "123456",
+      "token": "Ke45NeONgDQBtjdqg9Yw",
+      "id": 8
+    },
+    {
+      "fullName": "Tan Truong 1",
+      "email": "admin2",
+      "password": "123456",
+      "token": "ZGGRPIDC74x30djvhoj6",
+      "id": 9
+    },
+    {
+      "fullName": "Tan Truong 1",
+      "email": "admin3",
+      "password": "123456",
+      "token": "rdzvLDOjWEX44inW509C",
+      "id": 10
     }
   ],
   "topics": [
@@ -440,6 +468,42 @@
       "correctAnswer": 1
     },
     {
+      "id": 32,
+      "topicId": 2,
+      "question": "Muốn liên kết file HTML với file CSS ta dùng dòng nào sau đây?",
+      "answers": [
+        "<style src=\"mystyle.css\">",
+        "<stylesheet>mystyle.css</stylesheet>",
+        "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">",
+        "Tất cả đều đúng"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 33,
+      "topicId": 2,
+      "question": "Thuộc tính nào định nghĩa CSS ngay trong 1 tag?",
+      "answers": [
+        "font",
+        "class",
+        "style",
+        "styles"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 34,
+      "topicId": 2,
+      "question": "Đặt dòng liên kết với file CSS ở vùng nào trong file HTML?",
+      "answers": [
+        "Trong thẻ <body>",
+        "Trong thẻ <head>",
+        "Ở cuối file HTML",
+        "Ở đầu file HTML"
+      ],
+      "correctAnswer": 1
+    },
+    {
       "id": 35,
       "topicId": 2,
       "question": "Làm sao để tạo chữ đậm?",
@@ -494,7 +558,32 @@
       "answers": [
         "Liên kết chưa thăm",
         "Di chuột vào thẻ a",
-        "Liên kết đã thăm"
+        "Liên kết đã thăm",
+        "Kích hoạt một thành phần"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 40,
+      "topicId": 2,
+      "question": "Thuộc tính nào dùng để thay đổi màu nền?",
+      "answers": [
+        "color",
+        "bgcolor",
+        "background-color",
+        "Tất cả đều đúng"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 41,
+      "topicId": 2,
+      "question": "Làm thế nào thêm màu nền cho tất cả các phần tử <h1>?",
+      "answers": [
+        "h1.all {background-color:#FFFFFF}",
+        "h1 {background-color:#FFFFFF}",
+        "all.h1 {background-color:#FFFFFF}",
+        "Tất cả đều đúng"
       ],
       "correctAnswer": 1
     },
@@ -569,6 +658,30 @@
         "srand()"
       ],
       "correctAnswer": 0
+    },
+    {
+      "id": 48,
+      "topicId": 2,
+      "question": "Làm thế nào thay màu của chữ (text)?",
+      "answers": [
+        "text-color=",
+        "fgcolor:",
+        "color:",
+        "text-color:"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 49,
+      "topicId": 2,
+      "question": "Thuộc tính nào thay đổi kích cỡ chữ?",
+      "answers": [
+        "font-style",
+        "font-size:",
+        "text-style",
+        "text-size"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": 52,
@@ -893,12 +1006,133 @@
         "Lodash"
       ],
       "correctAnswer": 0
+    },
+    {
+      "id": 85,
+      "topicId": 2,
+      "question": "Thuộc tính nào làm chữ trong tag p trở thành chữ đậm?",
+      "answers": [
+        "p {text-size: bold}",
+        "<p style=\"font-size: bold\">",
+        "<p style=\"text-size: bold\">",
+        "p {font-weight: bold}"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 86,
+      "topicId": 2,
+      "question": "Làm sao để hiển thị liên kết mà không có gạch chân bên dưới?",
+      "answers": [
+        "a {decoration: no underline}",
+        "a {text-decoration: no underline}",
+        "a (underline: none)",
+        "a {text-decoration: none}"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 87,
+      "topicId": 2,
+      "question": "Làm sao để mỗi từ trong 1 câu đều viết hoa ở đầu từ?",
+      "answers": [
+        "text-transform: capitalize",
+        "text-transform: uppercase",
+        "Cả A và B đều đúng",
+        "CSS không hỗ trợ chức năng này"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 88,
+      "topicId": 2,
+      "question": "Làm sao để thay đổi font của mỗi phần tử?",
+      "answers": [
+        "font=",
+        "font:",
+        "font-family:",
+        "font-family="
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 89,
+      "topicId": 2,
+      "question": "Làm sao để tạo chữ đậm?",
+      "answers": [
+        "font-weight: bold",
+        "style: bold",
+        "font-style: bold",
+        "Tất cả đều đúng"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 90,
+      "topicId": 2,
+      "question": "Để định nghĩa khoảng trống giữa các viền (border) của phần tử và nội dung, bạn sử dụng thuộc tính padding, có thể gán giá trị âm cho thuộc tính này không?",
+      "answers": [
+        "Có",
+        "Không",
+        "Chỉ có thể ở một vài trường hợp đặc biệt",
+        "Tùy theo trình duyệt người dùng"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 91,
+      "topicId": 2,
+      "question": "Làm thế nào để hình ở đầu mỗi dòng của 1 list (danh sách) có hình vuông?",
+      "answers": [
+        "type: 2",
+        "type: square",
+        "list-type: square",
+        "list-style-type: square"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 92,
+      "topicId": 2,
+      "question": "a:hover là:",
+      "answers": [
+        "Liên kết chưa thăm",
+        "Di chuột vào thẻ a",
+        "Liên kết đã thăm",
+        "Kích hoạt một thành phần"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 93,
+      "topicId": 2,
+      "question": "Có mấy vị trí đặt CSS?",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 94,
+      "topicId": 2,
+      "question": "Làm sao để thay đổi lề trái của một phần tử?",
+      "answers": [
+        "margin-left:",
+        "text-indent:",
+        "indent:",
+        "left:"
+      ],
+      "correctAnswer": 0
     }
   ],
   "answers": [
     {
-      "userId": 5,
-      "topicId": 1,
+      "id": 1,
+      "userId": 7,
+      "topicId": 2,
       "answers": [
         {
           "questionId": 1,
@@ -917,6 +1151,679 @@
           "answer": 3
         }
       ]
+    },
+    {
+      "userId": 7,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 1
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 2
+        },
+        {
+          "questionId": 7,
+          "answer": 3
+        },
+        {
+          "questionId": 8,
+          "answer": 2
+        },
+        {
+          "questionId": 9,
+          "answer": 3
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        },
+        {
+          "questionId": 11,
+          "answer": 3
+        },
+        {
+          "questionId": 12,
+          "answer": 2
+        },
+        {
+          "questionId": 13,
+          "answer": 3
+        },
+        {
+          "questionId": 14,
+          "answer": 3
+        },
+        {
+          "questionId": 15,
+          "answer": 2
+        },
+        {
+          "questionId": 16,
+          "answer": 3
+        },
+        {
+          "questionId": 17,
+          "answer": 2
+        },
+        {
+          "questionId": 18,
+          "answer": 3
+        },
+        {
+          "questionId": 19,
+          "answer": 3
+        },
+        {
+          "questionId": 20,
+          "answer": 3
+        },
+        {
+          "questionId": 21,
+          "answer": 2
+        },
+        {
+          "questionId": 22,
+          "answer": 2
+        },
+        {
+          "questionId": 23,
+          "answer": 0
+        },
+        {
+          "questionId": 24,
+          "answer": 2
+        },
+        {
+          "questionId": 25,
+          "answer": 0
+        },
+        {
+          "questionId": 26,
+          "answer": 2
+        },
+        {
+          "questionId": 27,
+          "answer": 3
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 7,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 1
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 2
+        },
+        {
+          "questionId": 7,
+          "answer": 3
+        },
+        {
+          "questionId": 8,
+          "answer": 2
+        },
+        {
+          "questionId": 9,
+          "answer": 3
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        },
+        {
+          "questionId": 11,
+          "answer": 3
+        },
+        {
+          "questionId": 12,
+          "answer": 2
+        },
+        {
+          "questionId": 13,
+          "answer": 3
+        },
+        {
+          "questionId": 14,
+          "answer": 3
+        },
+        {
+          "questionId": 15,
+          "answer": 2
+        },
+        {
+          "questionId": 16,
+          "answer": 3
+        },
+        {
+          "questionId": 17,
+          "answer": 2
+        },
+        {
+          "questionId": 18,
+          "answer": 3
+        },
+        {
+          "questionId": 19,
+          "answer": 3
+        },
+        {
+          "questionId": 20,
+          "answer": 3
+        },
+        {
+          "questionId": 21,
+          "answer": 2
+        },
+        {
+          "questionId": 22,
+          "answer": 2
+        },
+        {
+          "questionId": 23,
+          "answer": 0
+        },
+        {
+          "questionId": 24,
+          "answer": 2
+        },
+        {
+          "questionId": 25,
+          "answer": 0
+        },
+        {
+          "questionId": 26,
+          "answer": 2
+        },
+        {
+          "questionId": 27,
+          "answer": 3
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": 7,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 1
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 2
+        },
+        {
+          "questionId": 7,
+          "answer": 3
+        },
+        {
+          "questionId": 8,
+          "answer": 2
+        },
+        {
+          "questionId": 9,
+          "answer": 3
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        },
+        {
+          "questionId": 11,
+          "answer": 3
+        },
+        {
+          "questionId": 12,
+          "answer": 2
+        },
+        {
+          "questionId": 13,
+          "answer": 3
+        },
+        {
+          "questionId": 14,
+          "answer": 3
+        },
+        {
+          "questionId": 15,
+          "answer": 2
+        },
+        {
+          "questionId": 16,
+          "answer": 3
+        },
+        {
+          "questionId": 17,
+          "answer": 2
+        },
+        {
+          "questionId": 18,
+          "answer": 3
+        },
+        {
+          "questionId": 19,
+          "answer": 3
+        },
+        {
+          "questionId": 20,
+          "answer": 3
+        },
+        {
+          "questionId": 21,
+          "answer": 2
+        },
+        {
+          "questionId": 22,
+          "answer": 2
+        },
+        {
+          "questionId": 23,
+          "answer": 0
+        },
+        {
+          "questionId": 24,
+          "answer": 2
+        },
+        {
+          "questionId": 25,
+          "answer": 0
+        },
+        {
+          "questionId": 26,
+          "answer": 2
+        },
+        {
+          "questionId": 27,
+          "answer": 3
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userId": 7,
+      "topicId": 4,
+      "answers": [
+        {
+          "questionId": 72,
+          "answer": 0
+        },
+        {
+          "questionId": 73,
+          "answer": 1
+        },
+        {
+          "questionId": 74,
+          "answer": 1
+        },
+        {
+          "questionId": 75,
+          "answer": 3
+        },
+        {
+          "questionId": 76,
+          "answer": 2
+        },
+        {
+          "questionId": 77,
+          "answer": 3
+        },
+        {
+          "questionId": 78,
+          "answer": 1
+        },
+        {
+          "questionId": 79,
+          "answer": 0
+        },
+        {
+          "questionId": 80,
+          "answer": 3
+        },
+        {
+          "questionId": 81,
+          "answer": 3
+        },
+        {
+          "questionId": 82,
+          "answer": 3
+        },
+        {
+          "questionId": 83,
+          "answer": 2
+        },
+        {
+          "questionId": 84,
+          "answer": 1
+        }
+      ],
+      "id": 5
+    },
+    {
+      "userId": 7,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 28,
+          "answer": 1
+        },
+        {
+          "questionId": 29,
+          "answer": 0
+        },
+        {
+          "questionId": 30,
+          "answer": 0
+        },
+        {
+          "questionId": 31,
+          "answer": 1
+        },
+        {
+          "questionId": 32,
+          "answer": 2
+        },
+        {
+          "questionId": 33,
+          "answer": 2
+        },
+        {
+          "questionId": 34,
+          "answer": 1
+        },
+        {
+          "questionId": 35,
+          "answer": 0
+        },
+        {
+          "questionId": 36,
+          "answer": 0
+        },
+        {
+          "questionId": 37,
+          "answer": 1
+        },
+        {
+          "questionId": 38,
+          "answer": 3
+        },
+        {
+          "questionId": 39,
+          "answer": 1
+        },
+        {
+          "questionId": 40,
+          "answer": 2
+        },
+        {
+          "questionId": 41,
+          "answer": 1
+        },
+        {
+          "questionId": 48,
+          "answer": 2
+        },
+        {
+          "questionId": 49,
+          "answer": 1
+        },
+        {
+          "questionId": 85,
+          "answer": 3
+        },
+        {
+          "questionId": 86,
+          "answer": 3
+        },
+        {
+          "questionId": 87,
+          "answer": 0
+        },
+        {
+          "questionId": 88,
+          "answer": 2
+        },
+        {
+          "questionId": 89,
+          "answer": 0
+        },
+        {
+          "questionId": 90,
+          "answer": 1
+        },
+        {
+          "questionId": 91,
+          "answer": 3
+        },
+        {
+          "questionId": 92,
+          "answer": 1
+        },
+        {
+          "questionId": 93,
+          "answer": 2
+        },
+        {
+          "questionId": 94,
+          "answer": 0
+        }
+      ],
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 2
+        },
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 3
+        },
+        {
+          "questionId": 7,
+          "answer": 1
+        },
+        {
+          "questionId": 8,
+          "answer": 1
+        },
+        {
+          "questionId": 9,
+          "answer": 0
+        },
+        {
+          "questionId": 10,
+          "answer": 3
+        },
+        {
+          "questionId": 11,
+          "answer": 2
+        },
+        {
+          "questionId": 12,
+          "answer": 2
+        },
+        {
+          "questionId": 13,
+          "answer": 1
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        },
+        {
+          "questionId": 16,
+          "answer": 0
+        },
+        {
+          "questionId": 17,
+          "answer": 0
+        },
+        {
+          "questionId": 18,
+          "answer": 0
+        },
+        {
+          "questionId": 19,
+          "answer": 1
+        },
+        {
+          "questionId": 20,
+          "answer": 0
+        },
+        {
+          "questionId": 21,
+          "answer": 2
+        },
+        {
+          "questionId": 22,
+          "answer": 2
+        },
+        {
+          "questionId": 23,
+          "answer": 1
+        },
+        {
+          "questionId": 24,
+          "answer": 2
+        },
+        {
+          "questionId": 25,
+          "answer": 0
+        },
+        {
+          "questionId": 26,
+          "answer": 3
+        },
+        {
+          "questionId": 27,
+          "answer": 0
+        }
+      ],
+      "id": 7
+    },
+    {
+      "userId": 7,
+      "topicId": 4,
+      "answers": [
+        {
+          "questionId": 72,
+          "answer": 1
+        },
+        {
+          "questionId": 73,
+          "answer": 3
+        },
+        {
+          "questionId": 74,
+          "answer": 2
+        },
+        {
+          "questionId": 75,
+          "answer": 1
+        },
+        {
+          "questionId": 76,
+          "answer": 0
+        },
+        {
+          "questionId": 77,
+          "answer": 2
+        },
+        {
+          "questionId": 78,
+          "answer": 3
+        },
+        {
+          "questionId": 79,
+          "answer": 0
+        },
+        {
+          "questionId": 80,
+          "answer": 2
+        },
+        {
+          "questionId": 81,
+          "answer": 3
+        },
+        {
+          "questionId": 82,
+          "answer": 0
+        },
+        {
+          "questionId": 83,
+          "answer": 1
+        },
+        {
+          "questionId": 84,
+          "answer": 0
+        }
+      ],
+      "id": 8
     }
   ]
 }

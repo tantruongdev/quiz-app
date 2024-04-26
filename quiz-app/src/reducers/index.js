@@ -1,9 +1,8 @@
-import loginReducer from "./login";
 import { combineReducers } from "redux";
-
+import loginReducer from "./login";
 const allReducers = combineReducers({
   loginReducer,
-  // Theem nhieu reducer o day
+  // Add more reducer here
 });
 
 export default allReducers;

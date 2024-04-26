@@ -1,0 +1,31 @@
+// .home-wrapper {
+//   // padding: 50px;
+// }
+
+
+.content {
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.list {
+  border-bottom: 3px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+
+  a {
+    padding: 4px 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #F1C40F;
+
+
+    &:hover {
+      background: orange;
+    }
+  }
+}

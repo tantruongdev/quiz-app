@@ -1,21 +1,22 @@
-import PrivateRouters from "../components/privateRouters";
+import PrivateRouters from "../components/PrivateRouter";
 import LayoutDefault from "../layout/LayoutDefault";
+import Answers from "../pages/Answers";
+import Error404 from "../pages/Error404";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
-import Register from "../pages/Register";
-import Answers from "../pages/Answers";
+import Logout from "../pages/Logout";
 import Quiz from "../pages/Quiz";
+import Register from "../pages/Register";
 import Result from "../pages/Result";
 import Topic from "../pages/Topic";
-import Logout from "../pages/Logout";
 
-export const routes = [
+const routes = [
   {
     path: "/",
     element: <LayoutDefault></LayoutDefault>,
     children: [
       {
-        path: "/",
+        index: true,
         element: <Home></Home>,
       },
       {
@@ -27,8 +28,8 @@ export const routes = [
         element: <Register></Register>,
       },
       {
-        path: "logout",
-        element: <Logout></Logout>,
+        path: "*",
+        element: <Error404></Error404>,
       },
       {
         element: <PrivateRouters></PrivateRouters>,
@@ -38,11 +39,15 @@ export const routes = [
             element: <Answers></Answers>,
           },
           {
+            path: "logout",
+            element: <Logout></Logout>,
+          },
+          {
             path: "quiz/:id",
             element: <Quiz></Quiz>,
           },
           {
-            path: "result",
+            path: "result/:id",
             element: <Result></Result>,
           },
           {
@@ -54,3 +59,5 @@ export const routes = [
     ],
   },
 ];
+
+export default routes;

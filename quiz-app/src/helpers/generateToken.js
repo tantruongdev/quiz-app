@@ -1,8 +1,9 @@
+// Hàm để tạo token gồm 20 kí tự ngẫu nhiên
 export function generateToken() {
-  const characters =
+  let characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let token = "";
-  const length = 20;
+  let length = 20;
   for (let i = 0; i < length; i++) {
     token += characters.charAt(Math.floor(Math.random() * characters.length));
   }

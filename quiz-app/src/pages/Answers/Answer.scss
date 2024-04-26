@@ -1,0 +1,46 @@
+.topic {
+  padding: 0 20px;
+
+  &__title-head {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 4px;
+
+    .button {
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-weight: 500;
+      background: #F1C40F;
+
+      &:hover {
+        background: orange;
+      }
+    }
+  }
+
+
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+
+}
+
+
+th,
+td {
+  padding: 10px;
+}

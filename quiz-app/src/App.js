@@ -1,9 +1,10 @@
 import "./App.css";
-import AllRoute from "./components/AllRoute";
+import AllRoutes from "./components/allRoutes";
+
 function App() {
   return (
     <>
-      <AllRoute></AllRoute>
+      <AllRoutes></AllRoutes>
     </>
   );
 }

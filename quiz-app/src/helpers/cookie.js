@@ -1,40 +1,41 @@
-// Hàm lấy cookie
+// Hàm để lấy giá trị của một cookie
 export function getCookie(cname) {
-  var nameEQ = cname + "=";
+  var name = cname + "=";
+  // var decodedCookie = decodeURIComponent(document.cookie);
+  // var ca = decodedCookie.split(';');
   var ca = document.cookie.split(";");
   for (var i = 0; i < ca.length; i++) {
     var c = ca[i];
-    while (c.charAt(0) === " ") c = c.substring(1, c.length);
-    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    while (c.charAt(0) === " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) === 0) {
+      return c.substring(name.length, c.length);
+    }
   }
   return "";
 }
 
-// Hàm tạo cookkie
-export function setCookie(cname, cvalue, exdays) {
-  var expires = "";
-  if (exdays) {
-    var date = new Date();
-    date.setTime(date.getTime() + exdays * 24 * 60 * 60 * 1000);
-    expires = "expires=" + date.toUTCString();
-  }
-
-  document.cookie = cname + "=" + (cvalue || "") + "; " + expires;
+// Hàm để đặt một cookie
+export function setCookie(cname, cvalue, exdays = 1) {
+  var d = new Date();
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-// Hàm xóa cookie
+// Hàm để xóa một cookie
 export function deleteCookie(cname) {
-  document.cookie = `${cname}=; expries=Thu, 01 Jan 1970 00:00:00 UTC`;
+  document.cookie = cname + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
 }
 
-// Hàm xóa tất cả cookie
+// Hàm để xóa tất cả các cookie
 export function deleteAllCookies() {
-  const cookies = document.cookie.split(";");
-
+  var cookies = document.cookie.split(";");
   for (var i = 0; i < cookies.length; i++) {
-    const cookie = cookies[i];
-    const eqPos = cookie.indexOf("=");
-    const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf("=");
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
   }
 }

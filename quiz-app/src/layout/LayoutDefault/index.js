@@ -1,53 +1,78 @@
-import { useSelector } from "react-redux";
-import { getCookie } from "../../helpers/cookie";
+import { useEffect } from "react";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import "./LayoutDefault.scss";
-import { NavLink, Outlet } from "react-router-dom";
+import Account from "../../components/Account";
+import { getCookie } from "../../helpers/cookie";
+import { useDispatch, useSelector } from "react-redux";
+import { checkUserExist } from "../../services/userServices";
+import { checkLogin } from "../../actions/login";
+
 function LayoutDefault() {
   const token = getCookie("token");
   const isLogin = useSelector((state) => state.loginReducer);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (token) {
+      const fetchApi = async () => {
+        const response = await checkUserExist("token", token);
+        if (response.length > 0) {
+          dispatch(checkLogin(true));
+        }
+      };
+      fetchApi();
+    }
+  }, []);
+  const isNavLinkActive = (e) => {
+    return e.isActive ? "menu__link menu__link--active" : "menu__link";
+  };
 
-  // console.log(token);
   return (
     <>
       <div className="layout-default">
         <header className="layout-default__header">
-          <div className="layout-default__logo">Quiz</div>
-
-          <div className="menu">
-            <ul>
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-              {token && (
-                <>
-                  <li>
-                    <NavLink to="/topic">Topic</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/answers">Answers</NavLink>
-                  </li>
-                </>
-              )}
-            </ul>
+          <div className="layout-default__logo">
+            <Link to="/">
+              <img src="" alt=""></img>
+              <span>Quiz</span>
+            </Link>
           </div>
+          {token && (
+            <div className="layout-default__menu">
+              <ul className="menu">
+                <li>
+                  <NavLink to="/" className={isNavLinkActive}>
+                    Home
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/topic" className={isNavLinkActive}>
+                    Topic
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/answers" className={isNavLinkActive}>
+                    Answers
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          )}
           <div className="layout-default__account">
-            {token ? (
-              <>
-                <NavLink to="/logout">Đăng xuất</NavLink>
-              </>
-            ) : (
-              <>
-                <NavLink to="/login">Đăng nhập</NavLink>
-                <NavLink to="/register">Đăng ký</NavLink>
-              </>
-            )}
+            <Account isLogin={isLogin}></Account>
+            {/* {isLogin ? () : (
+
+            )} */}
           </div>
         </header>
+        <main className="layout-default__main">
+          <Outlet></Outlet>
+        </main>
+        <footer className="layout-default__footer">
+          Copyright @ 2024 by Tan Truong
+        </footer>
       </div>
-      <main className="layout-default__main">
-        <Outlet></Outlet>
-      </main>
-      <footer className="layout-default__footer">Coryright @ 2023</footer>
     </>
   );
 }

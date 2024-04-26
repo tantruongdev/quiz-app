@@ -1,0 +1,34 @@
+.quiz {
+  &__title-head {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__answers {
+    margin-top: 16px;
+    padding-left: 8px;
+  }
+
+  &__answer {
+    display: flex;
+    align-items: center;
+
+    gap: 5px
+  }
+
+  &__submit {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #F1C40F;
+
+
+    &:hover {
+      background: orange;
+    }
+
+  }
+}

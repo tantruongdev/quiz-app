@@ -1,51 +1,74 @@
 import { useNavigate } from "react-router-dom";
+import { checkUserExist, register } from "../../services/userServices";
 import { generateToken } from "../../helpers/generateToken";
-import { checkExits, register } from "../../services/usersService";
+import "./Register.scss";
+
 function Register() {
   const navigate = useNavigate();
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const fullName = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
 
-    const checkExitsEmail = await checkExits("email", email);
-
-    if (checkExitsEmail.length > 0) {
-      alert("Email này đã tồn tại!");
-    } else {
-      const options = {
-        fullName: fullName,
-        email: email,
-        password: password,
-        token: generateToken(),
-      };
-
-      const response = await register(options);
-      // console.log(response);
-      if (response) {
-        navigate("/login");
+    const fetchApi = async () => {
+      const response = await checkUserExist("email", email);
+      if (response.length > 0) {
+        alert("Email đã tồn tại vui lòng nhập email khác!");
       } else {
-        alert("Đăng ký thất bại, vui lòng thử lại!");
+        const info = {
+          fullName: fullName,
+          email: email,
+          password: password,
+          token: generateToken(),
+        };
+
+        const response = await register(info);
+        if (Object.keys(response).length > 0) {
+          alert("Đăng ký tài khoản thành công. Vui lòng đăng nhập!");
+          navigate("/login");
+        } else {
+          alert("Đăng ký tài khoản không thành công!");
+        }
       }
-    }
+    };
+    fetchApi();
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <h2>Register</h2>
-        <div>
-          <input type="fullName" placeholder="Nhập họ tên"></input>
-        </div>
-        <div>
-          <input type="email" placeholder="Nhập email"></input>
-        </div>
-        <div>
-          <input type="password" placeholder="Nhập mật khẩu"></input>
-        </div>
-        <button type="submit">Register</button>
-      </form>
+      <div className="register">
+        <h1 className="register__title-head">Register</h1>
+        <form onSubmit={handleSubmit} className="register__form">
+          <div className="register__item">
+            {/* <label htmlFor="email">Email: </label> */}
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Enter your name..."
+            ></input>
+          </div>
+          <div className="register__item">
+            {/* <label htmlFor="email">Email: </label> */}
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter your email..."
+            ></input>
+          </div>
+          <div className="register__item">
+            {/* <label htmlFor="password">Password: </label> */}
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password..."
+            ></input>
+          </div>
+
+          <div className="register__item">
+            <button className="register__button">Register</button>
+          </div>
+        </form>
+      </div>
     </>
   );
 }
