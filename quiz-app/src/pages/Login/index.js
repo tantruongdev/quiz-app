@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../../services/userServices";
 import "./Login.scss";
@@ -8,6 +9,11 @@ function Login() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    alert(
+      "If you're unable to log in, please wait a few minutes for the server to come back online. Thank you."
+    );
+  }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target[0].value;
